@@ -81,19 +81,16 @@ void bottom_rotate(stack_t **head, __attribute__((unused)) unsigned int line_n);
 void f_nop(stack_t **head, unsigned int line_n);
 void free_stack(stack_t *head);
 
-/*===maths operations===*/
-void f_add(stack_t **head, unsigned int line_n);
-void f_div(stack_t **head, unsigned int line_n);
-void f_mul(stack_t **head, unsigned int line_n);
-void f_sub(stack_t **head, unsigned int line_n);
-void f_mod(stack_t **head, unsigned int line_n);
 
-/*===nodes operations===*/
+void myadd(stack_t **head, unsigned int line_n);
+void mydiv(stack_t **head, unsigned int line_n);
+void mysub(stack_t **head, unsigned int line_n);
+void f_swap(stack_t **head, unsigned int line_n);
 void add_node(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int line_n);
-void add_queue(stack_t **head, int n);
-void f_swap(stack_t **head, unsigned int line_n);
 int executable(char *content, stack_t **stack, unsigned int line_n, FILE *file);
+void add_queue(stack_t **head, int n);
+
 
 
 #endif

@@ -9,17 +9,17 @@
  */
 void mypall(stack_t **head, unsigned int line_n)
 {
-	stack_t *current_node = *head;
-	(void)line_n;
-	if (current_node == NULL)
-	{
-		return;
-	}
+	stack_t *current;
 
-	while (current_node != NULL)
+	(void)line_n;
+
+	current = *head;
+
+	while (current != NULL)
 	{
-		printf("%d\n", current_node->n);
-		current_node = current_node->next;
+		printf("%d", current->n);
+		current = current->next;
+		printf("\n");
 	}
 }
 

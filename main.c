@@ -3,19 +3,19 @@
 
 monty_t m = {NULL, NULL, NULL, 0};
 /**
- * main - entry point of monty code interpreter
- * @argc: number of arguments
- * @argv: argument vector monty file
- * Return: Return(0) on success
+ * main - entyyyy of vector
+ * @argc: nargs number
+ * @argv: monty files in
+ * Return: 0 if suuccesful
  */
 int main(int argc, char *argv[])
 {
-	char *content;
 	FILE *file;
 	size_t size = 0;
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int line_n = 0;
+	char *content;
 
 	if (argc != 2)
 	{

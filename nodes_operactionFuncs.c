@@ -119,13 +119,8 @@ int executable(char *content, stack_t **stack, unsigned int line_n, FILE *file)
 	instruction_t open_stack[] = {
 		{"push", mypush}, {"pall", mypall},
 		{"pint", mypint}, {"pop", mypop},
-		{"add", f_add}, {"nop", f_nop},
-		{"sub", f_sub}, {"div", f_div},
-		{"mul", f_mul}, {"mod", f_mod},
-		{"swap", f_swap}, {"pchar", printChar},
-		{"pstr", print_string}, {"queue", f_queue},
-		{"stack", mystack}, {"rotl", top_rotate},
-		{"rotr", bottom_rotate},
+		{"add", myadd}, {"nop", f_nop},
+		{"sub", mysub}, {"div", mydiv},
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
