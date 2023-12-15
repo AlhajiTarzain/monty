@@ -59,38 +59,28 @@ typedef struct monty_t
 extern monty_t m;
 
 
-ssize_t getstdin(char **lineptr, int file);
-char *clean_line(char *content);
-char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
-/*===string operations===*/
-void printChar(stack_t **head, unsigned int line_n);
-void print_topchar(stack_t **head, unsigned int line_n);
-void print_string(stack_t **head, unsigned int line_n);
-void print_sktop(stack_t **head, unsigned int line_n);
-
-/*===stack operations===*/
-void mypint(stack_t **head, unsigned int line_n);
-void mypop(stack_t **head, unsigned int line_n);
-void mypush(stack_t **head, unsigned int line_n);
-void mypall(stack_t **head, unsigned int line_n);
-void mystack(stack_t **head, unsigned int line_n);
-
-/*===stack manupulations===*/
-void top_rotate(stack_t **head, __attribute__((unused)) unsigned int line_n);
-void bottom_rotate(stack_t **head, __attribute__((unused)) unsigned int line_n);
-void f_nop(stack_t **head, unsigned int line_n);
-void free_stack(stack_t *head);
-
-
-void myadd(stack_t **head, unsigned int line_n);
 void mydiv(stack_t **head, unsigned int line_n);
 void mysub(stack_t **head, unsigned int line_n);
 void f_swap(stack_t **head, unsigned int line_n);
+void print_topchar(stack_t **head, unsigned int line_n);
+void print_string(stack_t **head, unsigned int line_n);
+void print_sktop(stack_t **head, unsigned int line_n);
+void mypall(stack_t **head, unsigned int line_n);
+void mystack(stack_t **head, unsigned int line_n);
+void f_nop(stack_t **head, unsigned int line_n);
+void free_stack(stack_t *head);
+void myadd(stack_t **head, unsigned int line_n);
 void add_node(stack_t **head, int n);
+void mypint(stack_t **head, unsigned int line_n);
+void mypop(stack_t **head, unsigned int line_n);
+void mypush(stack_t **head, unsigned int line_n);
 void f_queue(stack_t **head, unsigned int line_n);
 int executable(char *content, stack_t **stack, unsigned int line_n, FILE *file);
 void add_queue(stack_t **head, int n);
-
+ssize_t getstdin(char **lineptr, int file);
+char *clean_line(char *content);
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+void printChar(stack_t **head, unsigned int line_n);
 
 
 #endif
