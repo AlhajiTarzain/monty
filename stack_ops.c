@@ -2,10 +2,10 @@
 
 /**
  * mypall - this prints all elements.
- * @head:address head of stack.
- * @line_n: function line.
+ * @head:address head.
+ * @line_n: line number
  *
- * Reutrn: nothing.
+ * Reutrn: succefule,nothinh
  */
 void mypall(stack_t **head, unsigned int line_n)
 {
@@ -64,7 +64,7 @@ void mypush(stack_t **head, unsigned int line_n)
 
 
 /**
- * f_stack - print the top stack
+ * mystack - print the top stack
  * @head: the head stack
  * @line_n: the line number
  * Return: Return nothing
@@ -76,9 +76,9 @@ void mystack(stack_t **head, unsigned int line_n)
 	m.stackMode = 0;
 }
 /**
- * f_pint - print the top
- * @head: the stack head
- * @line_n: the line number
+ * mypint - print  top
+ * @head: head
+ * @line_n: line number
  * Return: Return nothing
  */
 void mypint(stack_t **head, unsigned int line_n)
